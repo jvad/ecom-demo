@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Brand XP1",
+    "id": 4444,
+    "qty": 1,
+    "price": 10,
+    "imgurl": "https://images.unsplash.com/photo-1561808843-7adeb9606939?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "name": "Brand XP2",
+    "id": 4445,
+    "price": 24,
+    "qty": 1,
+    "imgurl": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "name": "Brand XP3",
+    "id": 4446,
+    "qty": 1,
+    "price": 20,
+    "imgurl": "https://images.unsplash.com/photo-1573875133340-0b589f59a8c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+  }
+]
