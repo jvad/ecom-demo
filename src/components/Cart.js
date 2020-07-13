@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
 const Cart = () => {
   let navigate = useNavigate();
   const classes = useStyles();
-  const { itemsInCart, removeItem } = useContext(Context);
+  const { itemsInCart, removeItem, snackBarRemoved } = useContext(Context);
   const price = itemsInCart.map((item) => item.price * item.qty);
 
   const total = price.reduce((a, b) => (a += b), 0).toFixed(2);
@@ -91,7 +91,10 @@ const Cart = () => {
               <Typography variant="body2">Price: ${shoe.price}</Typography>
               <IconButton
                 aria-label="delete"
-                onClick={() => removeItem(shoe.id)}
+                onClick={() => {
+                  removeItem(shoe.id);
+                  snackBarRemoved("warning");
+                }}
               >
                 <RemoveShoppingCartIcon fontSize="large" />
               </IconButton>

@@ -24,7 +24,7 @@ export const ShoeListProvider = (props) => {
   };
 
   const snackBarRemoved = (variant) => {
-    enqueueSnackbar("Removed cart", { variant });
+    enqueueSnackbar("Removed from cart", { variant });
   };
   function removeItem(id) {
     dispatch({

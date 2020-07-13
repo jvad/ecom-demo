@@ -70,7 +70,11 @@ const NavBar = () => {
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
   const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
+    if (mobileMoreAnchorEl === null) {
+      setMobileMoreAnchorEl(event.currentTarget);
+    } else {
+      setMobileMoreAnchorEl(null);
+    }
   };
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
@@ -89,10 +93,10 @@ const NavBar = () => {
       <MenuItem onClick={handleMobileMenuOpen}>
         <Link to="/">Home</Link>
       </MenuItem>
-      <MenuItem>
+      <MenuItem onClick={handleMobileMenuOpen}>
         <Link to="/products">Products</Link>
       </MenuItem>
-      <MenuItem>
+      <MenuItem onClick={handleMobileMenuOpen}>
         <Link to="/about">About</Link>
       </MenuItem>
     </Menu>
