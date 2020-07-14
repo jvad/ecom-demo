@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     padding: "30px",
     // display: "flex",
+    overflow: "hidden",
     // justifyContent: "center",
   },
   title: {
