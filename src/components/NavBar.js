@@ -67,6 +67,7 @@ const useStyles = makeStyles((theme) => ({
   },
   sectionMobile: {
     display: "flex",
+    color: "black",
 
     [theme.breakpoints.up("sm")]: {
       display: "none",
