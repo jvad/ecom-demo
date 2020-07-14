@@ -26,6 +26,11 @@ export const ShoeListProvider = (props) => {
   const snackBarRemoved = (variant) => {
     enqueueSnackbar("Removed from cart", { variant });
   };
+  function emptyCart() {
+    dispatch({
+      type: "Empty",
+    });
+  }
   function removeItem(id) {
     dispatch({
       type: "Remove",
@@ -43,6 +48,7 @@ export const ShoeListProvider = (props) => {
         value={{
           list,
           setList,
+          emptyCart,
           itemsInCart: state.itemsInCart,
           removeItem,
           snackBarRemoved,

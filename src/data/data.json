@@ -3,13 +3,13 @@
     "name": "Brand XP1",
     "id": 4444,
     "qty": 1,
-    "price": 10,
+    "price": 34,
     "imgurl": "https://images.unsplash.com/photo-1561808843-7adeb9606939?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
   },
   {
     "name": "Brand XP2",
     "id": 4445,
-    "price": 24,
+    "price": 47,
     "qty": 1,
     "imgurl": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
   },
@@ -17,7 +17,50 @@
     "name": "Brand XP3",
     "id": 4446,
     "qty": 1,
-    "price": 20,
+    "price": 38,
     "imgurl": "https://images.unsplash.com/photo-1573875133340-0b589f59a8c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+  },
+
+  {
+    "name": "Brand XP4",
+    "id": 4447,
+    "qty": 1,
+    "price": 55,
+    "imgurl": "https://images.pexels.com/photos/1461048/pexels-photo-1461048.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "name": "Brand XP5",
+    "id": 4448,
+    "qty": 1,
+    "price": 50,
+    "imgurl": "https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "name": "Brand XP6",
+    "id": 4449,
+    "qty": 1,
+    "price": 45,
+    "imgurl": "https://images.pexels.com/photos/2404959/pexels-photo-2404959.png?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "name": "Brand XP7",
+    "id": 4450,
+    "qty": 1,
+    "price": 37,
+    "imgurl": "https://images.timberland.com/is/image/timberland/A1UZK001-HERO?$PDP-FULL-IMAGE$"
+  },
+  {
+    "name": "Brand XP8",
+    "id": 4451,
+    "qty": 1,
+    "price": 36,
+    "imgurl": "https://ae01.alicdn.com/kf/H13fec8f48c89467e9b4431460f7c38889/Yomior-Official-New-Style-Men-Shoes-Square-Toe-Formal-Dress-Leather-Shoes-Italian-Loafers-Party-Wedding.jpg"
+  },
+  {
+    "name": "Brand XP9",
+    "id": 4452,
+    "qty": 1,
+    "price": 40,
+    "imgurl": "https://m.media-amazon.com/images/I/71mr0s6xLYL._SR500,500_.jpg"
   }
 ]

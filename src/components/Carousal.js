@@ -19,7 +19,7 @@ function DemoCarousel() {
   return (
     <Carousel
       autoPlay
-      interval={2000}
+      interval={3000}
       infiniteLoop
       showThumbs={false}
       dynamicHeight={true}

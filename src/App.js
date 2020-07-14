@@ -10,6 +10,7 @@ import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
 import Footer from "./components/Footer";
 import { makeStyles } from "@material-ui/core";
+import Thanks from "./components/Thanks";
 
 const useStyles = makeStyles((theme) => ({
   wraper: {
@@ -38,6 +39,7 @@ function App() {
             </Route>
             <Route path="/about" element={<About />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Thanks />} />
           </Routes>
         </div>
         <Footer />

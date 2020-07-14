@@ -17,6 +17,11 @@ export default (state, action) => {
           (transaction) => transaction.id !== action.payload
         ),
       };
+    case "Empty": {
+      return {
+        itemsInCart: [],
+      };
+    }
     //
     default:
       return state;

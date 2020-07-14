@@ -11,6 +11,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
   },
+  top: {
+    animation: `$myEffect 2000ms ${theme.transitions.easing.easeInOut}`,
+  },
   link: {
     color: "black",
     margin: "15px",
@@ -22,6 +25,47 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid black",
     marginTop: "20px",
     padding: "10px",
+    animation: `$myEffect2 2000ms ${theme.transitions.easing.easeInOut}`,
+  },
+  "@keyframes myEffect": {
+    "0%": {
+      opacity: 0,
+      transform: "translateY(-100%)",
+    },
+    "100%": {
+      opacity: 1,
+      transform: "translateY(0)",
+    },
+  },
+  "@keyframes myEffect2": {
+    "0%": {
+      opacity: 0,
+      transform: "translateX(-100%)",
+    },
+    "100%": {
+      opacity: 1,
+      transform: "translateX(0)",
+    },
+  },
+  avatar: {
+    animation: `$shake 4000ms ${theme.transitions.easing.easeInOut}`,
+  },
+  "@keyframes shake": {
+    "10%, 90%": {
+      transform: "translate3d(-1px, 0, 0)",
+    },
+
+    "20%, 80%": {
+      transform: "translate3d(2px, 0, 0)",
+    },
+
+    "30%, 50%, 70%": {
+      transform: "translate3d(-4px, 0, 0)",
+    },
+
+    "40%, 60%": {
+      transform: "translate3d(4px, 0, 0)",
+    },
   },
 }));
 const About = () => {
@@ -29,9 +73,10 @@ const About = () => {
   return (
     <Container className={classes.cont}>
       <Grid container spacing={3}>
-        <Grid container item xs={12} md={6}>
+        <Grid container item xs={12} md={6} className={classes.top}>
           <Grid item xs={12} md={6}>
             <img
+              className={classes.avatar}
               src="https://i.ya-webdesign.com/images/funny-png-avatar-2.png"
               alt="avatar"
               height="150px"
@@ -52,7 +97,7 @@ const About = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid container item xs={12} md={6}>
+        <Grid container item xs={12} md={6} className={classes.top}>
           <Grid item xs={12}>
             <Typography variant="h5"> Contact Me</Typography>
             <div className={classes.links}>

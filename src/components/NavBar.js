@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Context } from "./Context";
-
+import logo from "./images/shoes.svg";
 import {
   AppBar,
   Toolbar,
@@ -18,31 +18,41 @@ import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   links: {
-    color: "white",
+    color: "black",
     textDecoration: "none",
     boxSizing: "borderBox",
     padding: "10px",
     // background: "red",
     "&:hover": {
-      background: "#694f73",
+      background: "#e3e1e4",
       borderRadius: "4px",
     },
   },
+  logo: {
+    animation: `$spin 2000ms infinite ${theme.transitions.easing.easeInOut}`,
+    [theme.breakpoints.down("xs")]: {
+      flexGrow: 1,
+    },
+  },
   title: {
+    color: "black",
+    marginLeft: "10px",
     flexGrow: 1,
 
     [theme.breakpoints.down("xs")]: {
       textAlign: "center",
+      marign: 0,
+      display: "none",
     },
 
     // textAlign: "center",
   },
   root: {
-    background: "#745e7d",
+    background: "#f0f1ec",
     // textAlign: "center",
   },
   iButton: {
-    color: "white",
+    color: "black",
     marginLeft: "10px",
     [theme.breakpoints.down("sm")]: {
       marginLeft: 0,
@@ -61,6 +71,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       display: "none",
     },
+  },
+  "@keyframes spin": {
+    "0%": { transform: "rotate(0deg)" },
+    "100%": { transform: "rotate(360deg)" },
   },
 }));
 
@@ -117,6 +131,7 @@ const NavBar = () => {
               <MenuIcon />
             </IconButton>
           </div>
+          <img src={logo} alt="logo" height="50px" className={classes.logo} />
           <Typography variant="h6" className={classes.title}>
             Shoe Store
           </Typography>

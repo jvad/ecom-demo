@@ -16,12 +16,25 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "20px",
     maxWidth: "100%",
   },
+  root: {
+    animation: `$myEffect 3000ms ${theme.transitions.easing.easeInOut}`,
+  },
+  "@keyframes myEffect": {
+    "0%": {
+      opacity: 0,
+      transform: "translateY(-100%)",
+    },
+    "100%": {
+      opacity: 1,
+      transform: "translateY(0)",
+    },
+  },
 }));
 
 const Home = () => {
   const classes = useStyles();
   return (
-    <>
+    <div className={classes.root}>
       <DemoCarousel />
       <Container>
         <header className={classes.hdr}>
@@ -73,7 +86,7 @@ const Home = () => {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </div>
   );
 };
 export default Home;
