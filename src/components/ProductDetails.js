@@ -36,9 +36,20 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     maxWidth: "100%",
+    animation: `$myEffect 2000ms ${theme.transitions.easing.easeInOut}`,
   },
   btn: {
     marginTop: "20px",
+  },
+  "@keyframes myEffect": {
+    "0%": {
+      opacity: 0,
+      transform: "Scale(.1)",
+    },
+    "100%": {
+      opacity: 1,
+      transform: "translateX(1)",
+    },
   },
 }));
 

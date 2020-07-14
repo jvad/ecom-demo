@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     // justifyContent: "center",
   },
   title: {
-    animation: `$myEffect 2000ms ${theme.transitions.easing.easeInOut}`,
+    animation: `$myEffect 5000ms infinite ${theme.transitions.easing.easeInOut}`,
     background: "#988171",
     maxWidth: "300px",
     margin: "0 auto",
@@ -20,11 +20,15 @@ const useStyles = makeStyles((theme) => ({
   "@keyframes myEffect": {
     "0%": {
       opacity: 0,
-      transform: "translateY(-200%)",
+      transform: "translateX(-170%)",
+    },
+    "50%": {
+      opacity: 1,
+      transform: "translateX(0)",
     },
     "100%": {
-      opacity: 1,
-      transform: "translateY(0)",
+      opacity: 0,
+      transform: "translateX(170%)",
     },
   },
 }));
