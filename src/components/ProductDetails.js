@@ -41,6 +41,16 @@ const useStyles = makeStyles((theme) => ({
   btn: {
     marginTop: "20px",
   },
+  invalid: {
+    marginTop: "40px",
+
+    animation: `$myEffect 2000ms ${theme.transitions.easing.easeInOut}`,
+  },
+  typo: {
+    border: "1px dashed black",
+    borderRadius: "20%",
+    padding: "10px",
+  },
   "@keyframes myEffect": {
     "0%": {
       opacity: 0,
@@ -67,7 +77,13 @@ const ProductList = () => {
 
   const obj = list.filter((k) => k.id === parseInt(id));
   if (obj.length === 0) {
-    return <h1>No item with this id</h1>;
+    return (
+      <Container maxWidth="sm" align="center" className={classes.invalid}>
+        <Typography variant="h5" className={classes.typo}>
+          Sorry.. . There is no item with this Id
+        </Typography>
+      </Container>
+    );
   }
 
   function clickHandler(shoe) {

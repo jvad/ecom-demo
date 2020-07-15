@@ -9,6 +9,7 @@ import { ShoeListProvider } from "./components/Context";
 import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
 import Footer from "./components/Footer";
+import Notfound from "./components/Notfound";
 import { makeStyles } from "@material-ui/core";
 import Thanks from "./components/Thanks";
 
@@ -40,6 +41,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Thanks />} />
+            <Route path="/*" element={<Notfound />} />
           </Routes>
         </div>
         <Footer />
